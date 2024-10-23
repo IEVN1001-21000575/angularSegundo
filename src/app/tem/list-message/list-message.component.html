@@ -1,6 +1,9 @@
 <p>list-message works!</p>
 
+<tr *ngFor="let item of messageService.alumnos">
 
-<ul>
-    <li ngFor="let alum of messageService.alumnos"></li>
-</ul>
+<td>{{item}}</td>
+
+</tr>
+
+{{messageService.alumnos}}
