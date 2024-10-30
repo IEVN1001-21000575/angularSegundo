@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
- 
+
 export const routes: Routes = [
     {
         path:'auth',
@@ -9,4 +9,8 @@ export const routes: Routes = [
         path:'formulario',
         loadChildren:()=> import('./formulario/routes.formulario')
     }
+
+   
+
+
 ];
