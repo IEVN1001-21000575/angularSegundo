@@ -19,7 +19,6 @@ export class AlumnoFilterPipe implements PipeTransform {
 //import { HttpClient } from '@angular/common/http';
 import { HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AlumnosUtl } from './interfaces/alumnosutl';
 import { Observable } from 'rxjs';
  
 @Injectable({
@@ -50,5 +49,6 @@ public EliminaAlumno(mat:number):Observable<AlumnosUtl>{
   return this.http.delete<AlumnosUtl>('http://127.0.0.1:5000/alumnos/'+mat)
 }
  
+
 }
  

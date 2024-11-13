@@ -6,8 +6,8 @@ export const routes: Routes = [
         loadChildren:()=> import('./auth/features/auth.route')
     },
     {
-        path:'formulario',
-        loadChildren:()=> import('./formulario/routes.formulario')
+        path:'utl',
+        loadChildren:()=> import('./utl/utl.route')
     }
 
    
